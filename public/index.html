@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Ashish Khanal
+    CSC 372
+    Date: 10/01/2025
+    Assiginment 07
+    Description: Jokebook Web Application, A full stack web application that allows users to view, search, and add jokes .
+    User can view random jokes, browse jokes by category, search for specific categories, and submit new jokes through a form.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 7: Jokebook</h1>
+    </header>
+
+    <main>
+        <!-- Random Joke Section -->
+        <section id="random-joke-section">
+            <h2>Random Joke</h2>
+            <p id="random-joke"></p>
+            <button id="load-random-joke">Load Random Joke</button>
+            <!-- <p id="random-joke"></p> -->
+        </section>
+
+
+
+        <!-- Categories Section -->
+        <section id="categories-section">
+            <h2>Categories</h2>
+            <button id="load-categories">Show Categories</button>
+            <ul id="categories-list"></ul>
+        </section>
+
+
+        <!-- Jokes by Category -->
+        <section id="category-jokes-section">
+            <h2>Jokes in Selected Category</h2>
+            <table id="top-jokes-table">
+                <thead>
+                    <tr>
+                        <th>Setup</th>
+                        <th>Delivery</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Search Category Section -->
+        <section id="search-category-section">
+            <h2>Search Category</h2>
+            <input type="text" id="search-input" placeholder="Enter category name">
+            <button id="search-btn">Search</button>
+            <div id="search-results"></div>
+        </section>
+
+        <!-- Add New Joke Form -->
+        <section id="add-joke-section">
+            <h2>Add a New Joke</h2>
+            <form id="add-joke-form">
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="category" required><br><br>
+
+                <label for="setup">Setup:</label><br>
+                <textarea id="setup" name="setup" required></textarea><br><br>
+
+                <label for="delivery">Delivery:</label><br>
+                <textarea id="delivery" name="delivery" required></textarea><br><br>
+
+                <button type="submit">Add Joke</button>
+            </form>
+            <p id="form-feedback"></p>
+        </section>
+
+
+        <!-- Duplicate Table to Display Same Data in Bottom Section -->
+        <section id="added-jokes-section">
+            <h2>All Jokes in Category </h2>
+            <table id="bottom-jokes-table">
+                <thead>
+                    <tr>
+                        <th>Setup</th>
+                        <th>Delivery</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+
+    </main>
+</body>
+</body>
+
+</html>

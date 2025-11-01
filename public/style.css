@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2a7f62;
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #2a9d8f;
+    text-align: center;
+    text-decoration: underline;
+}
+
+section {
+    background: #d1f0ee;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 6px 0;
+    cursor: pointer;
+    color: #264653;
+    font-weight: 500;
+    color: yellowgreen;
+}
+
+li:hover {
+    color: #e76f51;
+}
+
+#random-joke,
+#form-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #264653;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #aacccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;/
+}
+
+tbody tr:hover {
+    background-color: #eefdfd;
+}
+
+
+#category-jokes-section h2,
+#added-jokes-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #333;
+}
+
+
+
+hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+#random-joke-section,
+#search-category-section,
+#add-joke-section,
+#joke-list-section,
+#category-jokes-section,
+#categories-section {
+    text-align: center;
+}
+
+#category,
+#setup,
+#delivery {
+    max-width: 300px;
+    margin: 0 auto;
+}
